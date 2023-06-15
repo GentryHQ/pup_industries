@@ -1,0 +1,53 @@
+@use './variables' as v;
+@use './breakpoint' as b;
+
+.hero {
+    background-image: linear-gradient(0deg, rgba(0, 18, 1, 0.65), rgba(0, 18, 1, 0.65)), url(../Images/Hero_image.JPG);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    &_wrapper {
+        gap: 1.5rem;
+        text-align: center;
+
+        h1 {
+            color: v.$White;
+            font-size: 1.875rem;
+            margin-block-end: 1.5rem;
+            font-weight: v.$fw4;
+
+            @include b.breakpoint-md {
+                font-size: 2.8125rem;
+            }
+
+            @include b.breakpoint-lg {
+                font-size: 3.75rem;
+            }
+        }
+
+        p {
+            color: v.$White;
+            font-weight: v.$fw1;
+            max-width: 500px;
+            margin-block-end: 1.5rem;
+            margin-inline: auto;
+        }
+    }
+}
+
+.cta {
+    background-color: v.$green;
+    padding: .9375rem 1.5625rem;
+    color: v.$White;
+    border-radius: 10px;
+    transition: all 0.3s ease-in;
+
+    &:hover {
+        background-color: v.$greenGradient2;
+    }
+}

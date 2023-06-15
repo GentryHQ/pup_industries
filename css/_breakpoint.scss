@@ -1,0 +1,24 @@
+// 767px, 768px, 1024px
+$breakpoints: (
+    'small' : '48.117260044155em',
+    'medium' : '48.179994411879em',
+    'large' : '64.239992549172em',
+);
+
+@mixin breakpoint-sm {
+    @media screen and (max-width: 48.117260044155em) {
+        @content;
+    }
+}
+
+@mixin breakpoint-md {
+    @media screen and (min-width: 48.179994411879em) {
+        @content;
+    }
+}
+
+@mixin breakpoint-lg {
+    @media screen and (min-width: 64.239992549172em) {
+        @content;
+    }
+}
