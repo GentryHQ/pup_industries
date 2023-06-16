@@ -34,6 +34,10 @@ h3 {
 p {
     font-size: 1rem;
     line-height: 1.5;
+
+    @include b.breakpoint-md {
+        font-size: 1.125rem;
+    }
 }
 
 li {

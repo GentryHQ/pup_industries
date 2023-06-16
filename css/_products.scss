@@ -1,0 +1,44 @@
+@use "./variables" as v;
+@use "./breakpoint" as b;
+
+.products_wrapper {
+
+    h2 {
+        text-align: center;
+    }
+
+    .product_text {
+        max-width: 600px;
+        margin-inline: auto;
+        margin-block: 1.5rem 4rem;
+        text-align: center;
+    }
+}
+
+.products_card {
+    max-width: 62.5rem;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.125rem;
+    text-align: center;
+    margin-block-end: 4rem;
+
+    @include b.breakpoint-md {
+        flex-direction: row;
+        gap: 5rem;
+        text-align: left;
+    }
+
+    img {
+        inline-size: 26.25rem;
+    }
+
+    .textbox {
+        h3 {
+            color: v.$textHeadingGreen;
+            margin-block-end: 1rem;
+        }
+    }
+}

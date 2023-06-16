@@ -1,0 +1,48 @@
+@use "./variables" as v;
+@use "./breakpoint" as b;
+
+.impact {
+    background: linear-gradient(to right, v.$greenGradient1, v.$greenGradient2);
+    padding-block: 6.25rem;
+    color: v.$White;
+
+    h2, .impact_text {
+        text-align: center;
+    }
+
+    &_text {
+        max-width: 600px;
+        margin-inline: auto;
+        margin-block: 1.5rem 4rem;
+    }
+
+    &_card {
+        max-width: 62.5rem;
+        margin-inline: auto;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+        margin-block-end: 4rem;
+
+        @include b.breakpoint-md{
+            text-align: left;
+            gap: 4rem;
+            align-items: center;
+            flex-direction: row;
+        }
+
+        h3 {
+            margin-block-end: 16px;
+        }
+
+        img {
+            max-inline-size: 430px;
+        }
+
+        .empower {
+            flex-direction: column-reverse;
+        }
+
+    }
+}
