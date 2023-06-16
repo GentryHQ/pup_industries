@@ -36,6 +36,10 @@
             max-width: 500px;
             margin-block-end: 1.5rem;
             margin-inline: auto;
+
+            @include b.breakpoint-md {
+                font-size: 18px;
+            }
         }
     }
 }

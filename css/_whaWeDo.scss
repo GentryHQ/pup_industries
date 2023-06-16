@@ -1,0 +1,26 @@
+@use "./variables" as v;
+@use "./breakpoint" as b;
+
+.whatWeDo {
+    margin-block: 4rem;
+    color: v.$White;
+
+    &_Wrapper {
+        background: linear-gradient(to right, v.$greenGradient1, v.$greenGradient2);
+        border-radius: 20px;
+        padding: 2.5rem;
+        text-align: center;
+        
+        .process {
+            display: grid;
+            gap: 40px;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+
+            &_card {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    }
+}

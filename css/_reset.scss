@@ -1,4 +1,5 @@
 @use './variables' as v;
+@use './breakpoint' as b;
 
 * {
     margin: 0;
@@ -10,6 +11,24 @@
 a {
     text-decoration: none;
     display: inline-block;
+}
+
+h2 {
+    font-size: 1.5625rem;
+    font-weight: v.$fw3;
+
+    @include b.breakpoint-md {
+        font-size: 2.1875rem;
+    }
+}
+
+h3 {
+    font-weight: v.$fw3;
+    font-size: 1.25rem;
+
+    @include b.breakpoint-md {
+        font-size: 1.5625rem;
+    }
 }
 
 p {
@@ -28,5 +47,5 @@ li {
 }
 
 img {
-    display: inline-block;
+    display: block;
 }

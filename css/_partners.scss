@@ -1,0 +1,20 @@
+@use './variables' as v;
+@use './breakpoint' as b;
+
+.partners {
+    padding-block: 4rem;
+    text-align: center;
+
+    .companyLogo {
+
+        h2 {
+            color: v.$textHeadingGreen;
+        }
+
+        &_slider {
+            margin-block-start: 2.5rem;
+            display: flex;
+            align-items: center;
+        }
+    }
+}
