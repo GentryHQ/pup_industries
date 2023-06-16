@@ -10,6 +10,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @include b.breakpoint-sm {
+        
+    }
     
     &_wrapper {
         gap: 1.5rem;
