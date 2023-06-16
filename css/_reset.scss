@@ -8,6 +8,10 @@
     font-family: v.$ff;
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
 a {
     text-decoration: none;
     display: inline-block;
