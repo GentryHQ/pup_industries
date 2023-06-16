@@ -20,7 +20,6 @@
     margin-inline: auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 1.125rem;
     text-align: center;
     margin-block-end: 4rem;
@@ -29,6 +28,7 @@
         flex-direction: row;
         gap: 5rem;
         text-align: left;
+        align-items: center;
     }
 
     img {

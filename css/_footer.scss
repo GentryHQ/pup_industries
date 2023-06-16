@@ -1,0 +1,48 @@
+@use "./variables" as v;
+@use "./breakpoint" as b;
+
+.footer {
+    margin-block-start: 6.25rem;
+    background: linear-gradient(to bottom, v.$greenGradient1, v.$greenGradient2);
+    padding-block: 5.25rem;
+    color: v.$White;
+
+    &_wrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 3.375rem;
+        
+        li {
+            margin-block-end: .625rem;
+        }
+
+        h5 {
+            font-size: 1.25rem;
+            font-weight: v.$fw2;
+            margin-block-end: 1.25rem;
+        }
+
+        .col1 {
+            p {
+                margin-block-start: .5rem;
+            }
+        }
+
+        .col2 {
+
+            
+            .contact {
+                display: flex;
+                gap: .625rem;
+            }
+        }
+    }
+
+    p, a {
+        font-size: .9375rem;
+    }
+
+    a {
+        color: v.$White;
+    }
+}

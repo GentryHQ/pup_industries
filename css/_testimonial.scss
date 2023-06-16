@@ -1,0 +1,53 @@
+@use "./variables" as v;
+@use "./breakpoint" as b;
+
+.testimonials {
+    h2 {
+        text-align: center;
+        color: v.$textHeadingGreen;
+    }
+
+    &_wrapper {
+        margin-block-start: 3rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        @include b.breakpoint-md {
+            flex-direction: row;
+        }
+
+        .person {
+            background: linear-gradient(to bottom, v.$greenGradient1, v.$greenGradient2);
+            color: v.$White;
+            padding: 2.5rem 1.5625rem;
+            border-radius: 2.5rem;
+        }
+
+        .details {
+            background-color: v.$White;
+            margin-block-start: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1.25rem;
+            padding: 1.25rem;
+            border-radius: 1rem;
+            color: v.$Black;
+            
+
+            img {
+                inline-size: 7.5rem;
+            }
+
+            h6 {
+                font-size: 18px;
+                font-weight: v.$fw3;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+        }
+    }
+}

@@ -30,6 +30,10 @@
             gap: 4rem;
             align-items: center;
             flex-direction: row;
+            
+            &.empower {
+                flex-direction: row-reverse;
+            }
         }
 
         h3 {
@@ -38,10 +42,6 @@
 
         img {
             max-inline-size: 430px;
-        }
-
-        .empower {
-            flex-direction: column-reverse;
         }
 
     }

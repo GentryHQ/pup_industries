@@ -1,0 +1,41 @@
+@use "./variables" as v;
+@use "./breakpoint" as b;
+
+.number {
+    margin-block: 5.25rem;
+
+    &_wrapper {
+        border: 2px solid v.$green;
+        border-radius: 1rem;
+        text-align: center;
+        padding: 3.125rem;
+        display: flex;
+        gap: 1.25rem;
+        flex-direction: column;
+        
+
+        @include b.breakpoint-md {
+            flex-direction: row;
+        }
+
+        h5 {
+            color: v.$textHeadingGreen;
+            font-size: 1.5625rem;
+        }
+
+        p {
+            color: v.$green;
+        }
+
+        .metrics:not(:first-child) {
+            border-left: 1px solid v.$green;
+            padding-inline-start: 30px;
+
+            @include b.breakpoint-sm {
+                border-top: 1px solid v.$green;
+                border-left: none;
+                padding-block-start: 1.875rem;
+            }
+        }
+    }
+}
