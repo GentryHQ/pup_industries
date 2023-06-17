@@ -29,12 +29,13 @@
 
         .metrics:not(:first-child) {
             border-left: 1px solid v.$green;
-            padding-inline-start: 30px;
+            padding-inline-start: 1.875rem;
 
             @include b.breakpoint-sm {
                 border-top: 1px solid v.$green;
                 border-left: none;
                 padding-block-start: 1.875rem;
+                padding-inline-start: 0px;
             }
         }
     }

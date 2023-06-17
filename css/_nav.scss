@@ -6,7 +6,51 @@
   align-items: center;
   justify-content: space-between;
 
+  .menuToggle {
+    background-color: v.$green;
+    padding: 10px;
+    transition: all 1s ease;
+
+    @include b.breakpoint-md {
+      display: none;
+    }
+
+    &:hover {
+      background-color: v.$greenGradient1;
+      transition: all 1s ease;
+
+      span.one {
+        transform: rotate(-144deg);
+        transition: all 1s ease;
+        transform-origin: 50% 100%;
+      }
   
+      span.three {
+        transform: rotate(-216deg);
+        transform-origin: 50% -15%;
+        transition: all 1s ease;
+      }
+
+      span.two {
+        transition: all 2s ease;
+        display: none;
+      }
+    }
+
+    span {
+      inline-size: 2.1875rem;
+      block-size: .1875rem;
+      background-color: v.$White;
+      display: block;
+      margin-block: 5px;
+    }
+
+    span.two {
+      inline-size: 1.875rem;
+    }
+
+    
+  }
 
   &_links {
 

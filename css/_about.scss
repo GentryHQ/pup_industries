@@ -1,0 +1,37 @@
+@use "./variables" as v;
+@use "./breakpoint" as b;
+
+.hero {
+  &.about {
+    min-height: 400px;
+  }
+}
+
+.hero_wrapper.about h1 {
+    margin-block-end: 0px;
+}
+
+.about_text {
+    margin-block: 3rem;
+    max-width: 1000px;
+    margin-inline: auto;
+}
+
+.about_goal_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 1000px;
+    margin-inline: auto;
+
+    .col>* {
+        border: 1px solid;
+        margin-block-end: 1.5rem;
+        padding: .875rem;
+        border-radius: .5rem;
+    }
+
+    @include b.breakpoint-md {
+        flex-direction: row;
+    }
+}

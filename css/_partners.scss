@@ -4,6 +4,7 @@
 .partners {
     padding-block: 4rem;
     text-align: center;
+    
 
     .companyLogo {
 
@@ -11,10 +12,44 @@
             color: v.$textHeadingGreen;
         }
 
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(ca
+                (-250px * 5));
+            }
+        }
+
         &_slider {
             margin-block-start: 2.5rem;
             display: flex;
             align-items: center;
+            width: calc(250px * 10);
+            margin-inline: auto;
+            animation: scroll 40s linear infinite;
+
+            &:hover {
+                animation-play-state: paused;
+            }
+
+            .slide {
+                height: 100px;
+                width: 250px;
+                perspective: 60px;
+
+                img{
+                    transition: transform 1s;
+                }
+
+                img:hover {
+                    transform: translateZ(10px);
+
+                    // display: none;
+                }
+            }
         }
     }
 }
+

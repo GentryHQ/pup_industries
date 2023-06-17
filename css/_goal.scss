@@ -5,7 +5,7 @@
   &_wrapper {
     display: grid;
     gap: 40px;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(18.75rem, 100%), 1fr));
   }
 
   &_card {
@@ -15,8 +15,8 @@
         align-items: center;
 
         img {
-            inline-size: 150px;
-            block-size: 150px;
+            inline-size: 9.375rem;
+            block-size: 9.375rem;
             background: linear-gradient(to bottom, v.$greenGradient1, v.$greenGradient2);
             padding: 34px;
             border-radius: 30px;
