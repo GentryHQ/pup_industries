@@ -10,14 +10,24 @@
     background-color: v.$green;
     padding: 10px;
     transition: all 1s ease;
+    position: relative;
+    z-index: 5;
 
-    @include b.breakpoint-md {
-      display: none;
+    span.one {
+      transform: rotate(0deg);
+      transition: all 1s ease;
     }
 
-    &:hover {
+    span.three {
+      transform: rotate(0deg);
+      transition: all 1s ease;
+    }
+
+    &.active {
       background-color: v.$greenGradient1;
       transition: all 1s ease;
+      position: fixed;
+      right: 25px;
 
       span.one {
         transform: rotate(-144deg);
@@ -32,9 +42,12 @@
       }
 
       span.two {
-        transition: all 2s ease;
         display: none;
       }
+    }
+
+    @include b.breakpoint-md {
+      display: none;
     }
 
     span {
@@ -57,16 +70,23 @@
     @include b.breakpoint-sm {
       background-color: v.$White;
       box-shadow: -15px -2px 20px 0px #0000002e;
-      display: none;
+      display: flex;
       flex-direction: column;
       justify-content: center;
       padding: 50px;
       gap: 1.25rem;
       text-align: center;
-      position: absolute;
+      position: fixed;
       top: 0;
       bottom: 0;
-      right: 0;
+      right: 1000px;
+      left: -1000px;
+      transition: all 0.5s ease;
+
+      &.active {
+        right: 0;
+        left: 0;
+      }
     }
 
 
