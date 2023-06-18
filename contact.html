@@ -12,7 +12,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/style.css" />
-    <title>PUP Industries</title>
+    <title>PUP Industries || Contact Us</title>
   </head>
   <body>
     <header>
@@ -22,6 +22,7 @@
             ><img
               src="./Images/pup_industries_logo.png"
               alt="PUP Industries Logo"
+              class="logo"
           /></a>
 
           <ul class="nav_links">
@@ -29,32 +30,39 @@
             <li><a href="./about.html">About Us</a></li>
             <li><a href="./products.html">Products</a></li>
             <li><a href="#">Blog</a></li>
-            <li><a href="./contact.html" class="active">Contact Us</a></li>
+            <li ><a href="./contact.html" class="active">Contact Us</a></li>
             <li><a href="./products.html" class="cta">View Products</a></li>
           </ul>
-        </nav>
 
-        <button class="menuToggle">
-          <span class="one"></span>
-          <span class="two"></span>
-          <span class="three"></span>
-        </button>
+          <button class="menuToggle">
+            <span class="one"></span>
+            <span class="two"></span>
+            <span class="three"></span>
+          </button>
+        </nav>
       </div>
     </header>
 
-    <section class="hero">
+    <section class="contact">
       <div class="container">
-        <div class="hero_wrapper">
-          <h1>
-            Building A Sustainable <br />
-            Future for with PUP
-          </h1>
-          <p>
-            Reduce waste and protect the planet by recycling plastic materials
-            with us. Join our mission to create a more sustainable future, one
-            piece of plastic at a time
-          </p>
-          <a href="#" class="cta">View Products</a>
+        <div class="contact_wrapper">
+          <h1>Contact Us</h1>
+
+          <form class="contact_form">
+            <label for="fName">Full Name</label>
+            <input type="text" name="fName" id="fname" placeholder="John Doe">
+
+            <label for="Cmail">Email Address</label>
+            <input type="email" name="Email" id="Cmail" placeholder="john@doe.com">
+
+            <label for="phone">Phone Number</label>
+            <input type="number" name="phone" id="phone" placeholder="+23459403033">
+
+            <textarea name="message" id="msg" cols="30" rows="10" placeholder="Your message here"></textarea>
+
+            <button type="submit">Submit</button>
+
+          </form>
         </div>
       </div>
     </section>

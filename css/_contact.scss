@@ -1,0 +1,65 @@
+@use './variables' as v;
+@use './breakpoint' as b;
+
+.contact_wrapper {
+    margin-block-start: 6.25rem;
+    border: 1px solid v.$greenGradient1;
+    border-radius: 3rem;
+    padding: 3.5rem;
+    max-width: 56.25rem;
+    margin-inline: auto;
+
+    @include b.breakpoint-md {
+        margin-block-start: 7.8125rem;
+    }
+
+    h1 {
+        color: v.$textHeadingGreen;
+        text-align: center;
+        
+        @include b.breakpoint-md {
+            font-size: 40px;
+        }
+    }
+}
+
+.contact_form {
+    margin-block-start: 2.5rem;
+
+    label, input, button {
+        display: block;
+        font-weight: v.$fw3;
+        width: 100%;
+    }
+
+    input, button, textarea {
+        padding: 1rem;
+        border-radius: .5rem;
+    }
+
+    label {
+        margin-block-end: .5rem;
+    }
+
+    input {
+        margin-block-end: 1.5rem;
+        border: 1px solid v.$greenGradient1;
+    }
+
+    button {
+        background-color: v.$green;
+        color: v.$White;
+        margin-block-start: 1.5rem;
+
+        &:hover {
+            background-color: v.$textHeadingGreen;
+        }
+    }
+
+    textarea {
+        display: block;
+        width: 100%;
+        resize: none;
+        border: 1px solid v.$greenGradient1;
+    }
+}

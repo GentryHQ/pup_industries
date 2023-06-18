@@ -6,9 +6,16 @@
   align-items: center;
   justify-content: space-between;
 
+  @include b.breakpoint-sm{
+    .logo {
+      inline-size: 80px;
+   }
+  }
+  
+
   .menuToggle {
     background-color: v.$green;
-    padding: 10px;
+    padding: .5rem;
     transition: all 1s ease;
     position: relative;
     z-index: 5;
@@ -27,22 +34,23 @@
       background-color: v.$greenGradient1;
       transition: all 1s ease;
       position: fixed;
-      right: 25px;
+      right: 20px;
 
       span.one {
-        transform: rotate(-144deg);
+        transform: rotate(218deg); 
         transition: all 1s ease;
-        transform-origin: 50% 100%;
+        transform-origin: 55% 150%;
       }
   
       span.three {
-        transform: rotate(-216deg);
-        transform-origin: 50% -15%;
+        transform: rotate(132deg);
+        transform-origin: 60% -70%;
         transition: all 1s ease;
       }
 
       span.two {
-        display: none;
+        visibility: hidden;
+        // display: none;
       }
     }
 
@@ -52,14 +60,14 @@
 
     span {
       inline-size: 2.1875rem;
-      block-size: .1875rem;
+      block-size: 3px;
       background-color: v.$White;
       display: block;
       margin-block: 5px;
     }
 
     span.two {
-      inline-size: 1.875rem;
+      inline-size: 27px;
     }
 
     
