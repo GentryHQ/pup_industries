@@ -1,0 +1,66 @@
+@use "./variables" as v;
+@use "./breakpoint" as b;
+
+.product_showcase {
+    padding-block: 100px;
+    
+    &-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+
+        @include b.breakpoint-md {
+            gap: 140px;
+        }
+
+        @include b.breakpoint-md {
+            flex-direction: row;
+        }
+    }
+
+    .product_img-wrapper {
+        flex-basis: 50%;
+
+        img {
+            inline-size: 100%;
+        }
+    }
+
+    .img_small {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1.25rem;
+        margin-block-start: 1.5rem;
+
+        img {
+            inline-size: 10rem;
+            block-size: 11.125rem;
+            
+            @include b.breakpoint-sm {
+               inline-size: 90px;
+               block-size: 80px;
+            }
+        }
+    }
+
+    .product_textbox {
+        flex-basis: 50%;
+
+        h2 {
+            margin-block-end: 1.125rem;
+        }
+    }   
+}
+
+.product_showcase.p2p {
+    background: linear-gradient(to bottom, v.$greenGradient1, v.$greenGradient2);
+    color: v.$White;
+
+    & .product_showcase-wrapper{
+        @include b.breakpoint-md {
+            flex-direction: row-reverse;
+        }
+    }
+}

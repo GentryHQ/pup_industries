@@ -17,23 +17,23 @@
             flex-direction: row;
         }
 
-        .person {
+        .text {
             background: linear-gradient(to bottom, v.$greenGradient1, v.$greenGradient2);
-            color: v.$White;
             padding: 2.5rem 1.5625rem;
-            border-radius: 2.5rem;
+            border-radius: 2.5rem 2.5rem 0 0;
+            color: v.$White;
         }
 
         .details {
             background-color: v.$White;
-            margin-block-start: 20px;
             display: flex;
             justify-content: center;
             align-items: center;
             gap: 1.25rem;
             padding: 1.25rem;
-            border-radius: 1rem;
+            border-radius: 0 0 2.5rem 2.5rem;
             color: v.$Black;
+            box-shadow: 0px 6px 17px 0px rgb(4 39 4 / 9%);
             
 
             img {
@@ -41,8 +41,9 @@
             }
 
             h6 {
-                font-size: 18px;
+                font-size: 17px;
                 font-weight: v.$fw3;
+                margin-block-end: .5rem;
             }
 
             p {

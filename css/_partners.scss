@@ -17,8 +17,7 @@
                 transform: translateX(0);
             }
             100% {
-                transform: translateX(ca
-                (-250px * 5));
+                transform: translateX(calc(-250px * 5));
             }
         }
 
@@ -29,7 +28,8 @@
             width: calc(250px * 10);
             margin-inline: auto;
             animation: scroll 40s linear infinite;
-
+            height: 100px;
+        
             &:hover {
                 animation-play-state: paused;
             }
@@ -45,8 +45,6 @@
 
                 img:hover {
                     transform: translateZ(10px);
-
-                    // display: none;
                 }
             }
         }

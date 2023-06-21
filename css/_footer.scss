@@ -10,7 +10,7 @@
     &_wrapper {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 3.375rem;
+        gap: 40px;
         
         li {
             margin-block-end: .625rem;
@@ -30,12 +30,52 @@
 
         .col2 {
 
-            
             .contact {
                 display: flex;
                 gap: .625rem;
             }
         }
+
+        .col4 {
+
+            .newsletter {
+                margin-block-end: 2.5rem;
+
+                .mail, button {
+                padding: 1rem;
+                border-radius: .5rem;
+                }
+
+                .mail {
+                    border: none;
+                    outline: none;
+                }
+
+                button {
+                    background-color: v.$green;
+                    color: v.$White;
+
+                    &:hover {
+                        background-color: v.$greenGradient1;
+                    }
+                }
+            }
+
+            .socials {
+                display: flex;
+                gap: 1.25rem;
+            }
+
+        }
+    }
+
+    .line {
+        display: block;
+        margin-block: 5.25rem 2.5rem;
+    }
+
+    .copyright {
+        text-align: center;
     }
 
     p, a {
