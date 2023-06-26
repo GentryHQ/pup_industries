@@ -5,6 +5,8 @@
     padding-block: 100px;
     
     &-wrapper {
+        max-width: 1200px;
+        margin-inline: auto;
         display: flex;
         flex-direction: column;
         gap: 50px;
@@ -20,7 +22,7 @@
     }
 
     .product_img-wrapper {
-        flex-basis: 50%;
+        flex-basis: 40%;
 
         img {
             inline-size: 100%;
@@ -46,7 +48,7 @@
     }
 
     .product_textbox {
-        flex-basis: 50%;
+        flex-basis: 60%;
 
         h2 {
             margin-block-end: 1.125rem;

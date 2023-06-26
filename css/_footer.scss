@@ -54,6 +54,7 @@
                 button {
                     background-color: v.$green;
                     color: v.$White;
+                    margin-block-start: .625rem;
 
                     &:hover {
                         background-color: v.$greenGradient1;
