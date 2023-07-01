@@ -3,6 +3,7 @@
 
 .hero {
   &.about {
+    background-image: linear-gradient(0deg, rgba(0, 18, 1, 0.65), rgba(0, 18, 1, 0.65)), url(../Images/Hero_image.webp);
     min-height: 400px;
   }
 }
