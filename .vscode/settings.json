@@ -3,5 +3,6 @@
         "Cmail",
         "Enactus",
         "ICERFE"
-    ]
+    ],
+    "liveServer.settings.port": 5501
 }
